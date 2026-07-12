@@ -1,0 +1,6 @@
+{
+  "name": "Reliable Plumbing Services",
+  "description": "A modern, high-converting 4-page website for a professional plumbing company featuring interactive cost estimators, active dispatch status checkers, and real-time dispatcher ledgers.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
