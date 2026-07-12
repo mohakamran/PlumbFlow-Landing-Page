@@ -2,10 +2,9 @@
 
 A modern, high-converting, and visually stunning 4-page web application designed for a premier professional plumbing company. Built with clean, desktop-first precision and mobile-first responsive architecture.
 
----
-<img width="2730" height="1538" alt="plumbing-website-screenshot" src="https://github.com/user-attachments/assets/452f8f4d-a485-42c5-9a88-47877a693e77" />
+🔗 **Live Demo:** [https://plumb-flow-landing-page.vercel.app/](https://plumb-flow-landing-page.vercel.app/)
 
-Live Demo: https://plumb-flow-landing-page.vercel.app/
+---
 
 ## 🛠️ Tech Stack & Architecture
 

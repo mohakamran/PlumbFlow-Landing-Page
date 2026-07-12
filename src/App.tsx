@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { AnimatePresence } from 'motion/react';
 import Header from './components/Header';
 import Home from './components/pages/Home';
@@ -18,6 +18,21 @@ export default function App() {
   const [isAdminOpen, setIsAdminOpen] = useState(false);
   const [refreshLeadsTrigger, setRefreshLeadsTrigger] = useState(0);
   const [latestBooking, setLatestBooking] = useState<Booking | null>(null);
+
+  useEffect(() => {
+    // Dynamic runtime title set
+    document.title = "Reliable Plumbing Services | 24/7 Cost Estimator & Dispatch Ledger";
+
+    // Dynamic runtime favicon injection for a blue water droplet icon
+    let link = document.querySelector("link[rel~='icon']") as HTMLLinkElement;
+    if (!link) {
+      link = document.createElement('link');
+      link.rel = 'icon';
+      document.head.appendChild(link);
+    }
+    link.type = 'image/svg+xml';
+    link.href = "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%230055FF'/><path d='M50 22 C62 38 72 52 72 66 C72 78.2 62.2 88 50 88 C37.8 88 28 78.2 28 66 C28 52 38 38 50 22 Z' fill='white'/><circle cx='50' cy='66' r='10' fill='%230055FF'/></svg>";
+  }, []);
 
   const handleOpenQuoteModal = (svcId?: string) => {
     setInitialServiceId(svcId);
