@@ -3,6 +3,9 @@ import { motion } from 'motion/react';
 import { ShieldCheck, Star, Clock, Sparkles, Flame, CheckCircle2, PhoneCall, ArrowRight, ShieldAlert, Award, ThumbsUp } from 'lucide-react';
 import { Testimonial } from '../../types';
 
+import plumberHeroPortrait from '../../assets/images/plumber_hero_portrait_1783837635429.jpg';
+import serviceVanHighlight from '../../assets/images/service_van_highlight_1783837646636.jpg';
+
 interface HomeProps {
   onOpenQuoteModal: () => void;
   setActiveTab: (tab: 'home' | 'services' | 'about' | 'contact') => void;
@@ -121,7 +124,7 @@ export default function Home({ onOpenQuoteModal, setActiveTab }: HomeProps) {
               <div className="absolute inset-0 bg-gradient-to-t from-[#002244]/75 via-transparent to-transparent z-10" />
 
               <img
-                src="/src/assets/images/plumber_hero_portrait_1783837635429.jpg"
+                src={plumberHeroPortrait}
                 alt="Professional Smiling Plumber Crew member standing proudly in workshop"
                 referrerPolicy="no-referrer"
                 className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-700"
@@ -188,7 +191,7 @@ export default function Home({ onOpenQuoteModal, setActiveTab }: HomeProps) {
             <div className="lg:col-span-5 relative">
               <div className="relative rounded-[2rem] overflow-hidden border-4 border-white shadow-xl bg-slate-100">
                 <img
-                  src="/src/assets/images/service_van_highlight_1783837646636.jpg"
+                  src={serviceVanHighlight}
                   alt="Fully equipped white plumbing fleet vehicle ready for emergency dispatch"
                   referrerPolicy="no-referrer"
                   className="w-full object-cover aspect-[4/3] transform hover:scale-102 transition-transform duration-500"
